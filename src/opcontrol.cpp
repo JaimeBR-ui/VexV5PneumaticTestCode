@@ -22,15 +22,15 @@ bool state = LOW;
 pros::ADIDigitalOut pneumatic_A = pros::ADIDigitalOut('A', state);
 
 void testPneumatic(void);
-void pneumaticLift();
+void pneumaticLift(void);
 
 void opcontrol() {
 	while (true) {
 		testPneumatic();
-
 		//using single action pneumatics for a lift
 		//pneumaticLift();
 	}
+	return;
 }
 
 void testPineumatic(void){
